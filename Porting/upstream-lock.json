@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "packages": [
+    {
+      "name": "@ai-sdk/cartesia",
+      "reviewedVersion": "3.0.63",
+      "ledgerKind": "provider",
+      "evidence": "`AIProviders.cartesia`, `CartesiaProvider`, `CartesiaSpeechModel`, `CartesiaTranscriptionModel`, `CartesiaStreamingTranscriptionModel`, `Cartesia*Tests.swift`",
+      "reviewStatus": "imported-reviewed-with-gaps",
+      "archiveIntegrity": "sha512-o4J1evblqGwlstR1F5CuvcMUtSHFSvF8POOWc26+mWf8cj1jF387tk1AFOZfy/0CYfd8al6y6ljDidZwmWuD+w==",
+      "sourceRef": "npm:@ai-sdk/cartesia@3.0.63",
+      "testRef": "682e2dd71456f14f9da33a1b983d1998c3a1184c",
+      "testRefRelationship": "inventory-snapshot-not-release-verified",
+      "contractFamilies": [],
+      "contractReview": "not-imported; inspect upstream declarations before extraction"
+    }
+  ]
+}

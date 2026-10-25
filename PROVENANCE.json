@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "package": "swift-ai-cartesia",
+  "version": "1.0.0",
+  "releaseID": "modular-3",
+  "source": {
+    "commit": "7fc9b4cd72f8f83b75ba7eee2e38d37127539317",
+    "baseCommit": "7fc9b4cd72f8f83b75ba7eee2e38d37127539317",
+    "workingTree": false,
+    "inputsSHA256": "49b802ba4a30454f78c9886ab3114537ef659ab3e6db7775479b7351f6e3f0ab"
+  },
+  "dependencies": [
+    {
+      "package": "swift-ai-core",
+      "from": "1.1.0"
+    }
+  ],
+  "changes": [
+    {
+      "id": "remaining-package-extraction",
+      "notes": "Extract the existing runtime, typed settings and standalone tests from the compatibility aggregate. Preserve the reviewed npm baseline and existing capability/gap boundaries.",
+      "compatibility": "Initial independent Swift package version. Existing SwiftAISDK entry points remain in the development compatibility facade; no npm-version equivalence is implied."
+    }
+  ],
+  "canonicalDirectory": "Packages/swift-ai-cartesia",
+  "upstream": [
+    {
+      "name": "@ai-sdk/cartesia",
+      "reviewedVersion": "3.0.63",
+      "ledgerKind": "provider",
+      "evidence": "`AIProviders.cartesia`, `CartesiaProvider`, `CartesiaSpeechModel`, `CartesiaTranscriptionModel`, `CartesiaStreamingTranscriptionModel`, `Cartesia*Tests.swift`",
+      "reviewStatus": "imported-reviewed-with-gaps",
+      "archiveIntegrity": "sha512-o4J1evblqGwlstR1F5CuvcMUtSHFSvF8POOWc26+mWf8cj1jF387tk1AFOZfy/0CYfd8al6y6ljDidZwmWuD+w==",
+      "sourceRef": "npm:@ai-sdk/cartesia@3.0.63",
+      "testRef": "682e2dd71456f14f9da33a1b983d1998c3a1184c",
+      "testRefRelationship": "inventory-snapshot-not-release-verified",
+      "contractFamilies": [],
+      "contractReview": "not-imported; inspect upstream declarations before extraction"
+    }
+  ],
+  "note": "Independent port. Imported test refs and contract review gaps retain their original status; export is not new upstream parity proof.",
+  "canonicalInputs": [
+    {
+      "canonicalPath": ".github/workflows/package-check.yml",
+      "sha256": "7ff448e130f7aed96c38accdf828b6d993997ebc5317358347e9a70a649e67ca"
+    },
+    {
+      "canonicalPath": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-cartesia/Package.swift",
+      "sha256": "9328631309d2124e6a894c0a0a484380fe1ebfe0593c28e6be5aea0df64c2ab9"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-cartesia/Porting/map.json",
+      "sha256": "8d5d413732dec52d4af89d51c3fac5673ae2c2f12b34ae13a426809ca78fd476"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-cartesia/README.md",
+      "sha256": "305b826f6ce83cef7241aa1582b3ca0e91bc44e8e3fb48a487059bcd83fedd39"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-cartesia/Sources/SwiftAICartesia/CartesiaHTTPConfiguration.swift",
+      "sha256": "91dc2efa8372bb75c15e0296a235231040a37779bddd2e1c47e799e67a278cbd"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-cartesia/Sources/SwiftAICartesia/CartesiaProvider.swift",
+      "sha256": "8ea848044316f437932c1ca47e9a9867ac429a2b788e686002fc9909328ad741"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-cartesia/Sources/SwiftAICartesia/CartesiaSpeechModel.swift",
+      "sha256": "ac02a8290b626601009bc38f84f39f156151c1405c2d4097d8b5d2021be76df3"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-cartesia/Sources/SwiftAICartesia/CartesiaStreamingTranscriptionModel.swift",
+      "sha256": "18dacb88d8775cdfd6a01f0476d4ffc597ed02a7337b7dc6f494063d4ded5cc9"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-cartesia/Sources/SwiftAICartesia/CartesiaTranscriptionModel.swift",
+      "sha256": "706c7b2e21deeeccd1ced55c7593a6c7d46bcf52f17f68178ad41e63210c77c1"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-cartesia/Tests/SwiftAICartesiaTests/CartesiaProviderTests.swift",
+      "sha256": "4dd542b1312ae41d6c6a0716b82416462225895c4efb636f8c2b20eac606d45c"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-cartesia/Tests/SwiftAICartesiaTests/CartesiaSpeechModelTests.swift",
+      "sha256": "0a5e8a0c29adb3ee760f0eee75839350d6a3b7938a4e68d1dae57cf44d630806"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-cartesia/Tests/SwiftAICartesiaTests/CartesiaStreamingTranscriptionModelTests.swift",
+      "sha256": "d1c2266069ce17aec5a5c505aba1704b37f8d3864318e801e37f4c754cfe3955"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-cartesia/Tests/SwiftAICartesiaTests/CartesiaTranscriptionModelTests.swift",
+      "sha256": "128f9aabee6a7f58d0ba6d8c2baf5e09b621a8f7d9cbcc375800faf3b5c347b8"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-cartesia/Tests/SwiftAICartesiaTests/FixtureDownloadTransport.swift",
+      "sha256": "e8ca0c1ca5c985bdeae973a5cf81c52e13f459788517ec284d7d059b74d39384"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-cartesia/Tests/SwiftAICartesiaTests/TestSupport.swift",
+      "sha256": "ba6dc805ace75a600dcb1d30e2bd9c2ff76692940acab8c9363ed1795f49801b"
+    }
+  ]
+}
