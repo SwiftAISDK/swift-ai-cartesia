@@ -1,41 +1,45 @@
 {
   "schemaVersion": 1,
   "package": "swift-ai-cartesia",
-  "version": "1.0.0",
-  "releaseID": "modular-3",
+  "version": "1.1.0",
+  "releaseID": "weekly-upstream-20261101",
   "source": {
-    "commit": "7fc9b4cd72f8f83b75ba7eee2e38d37127539317",
-    "baseCommit": "7fc9b4cd72f8f83b75ba7eee2e38d37127539317",
+    "commit": "ea057797494ab9bb66df8c6bfd8edc10245b20e7",
+    "baseCommit": "ea057797494ab9bb66df8c6bfd8edc10245b20e7",
     "workingTree": false,
-    "inputsSHA256": "49b802ba4a30454f78c9886ab3114537ef659ab3e6db7775479b7351f6e3f0ab"
+    "inputsSHA256": "b46f3e07b0a583d6fee81035987d74a06fc5c6109cbdf228144d1172d2c3676e"
   },
   "dependencies": [
     {
       "package": "swift-ai-core",
-      "from": "1.1.0"
+      "from": "1.2.0"
     }
   ],
   "changes": [
     {
-      "id": "remaining-package-extraction",
-      "notes": "Extract the existing runtime, typed settings and standalone tests from the compatibility aggregate. Preserve the reviewed npm baseline and existing capability/gap boundaries.",
-      "compatibility": "Initial independent Swift package version. Existing SwiftAISDK entry points remain in the development compatibility facade; no npm-version equivalence is implied."
+      "id": "weekly-upstream-20261101",
+      "notes": "Add native async throwing apiKeyProvider; resolve a fresh key immediately before every authenticated HTTP send/stream through the shared transport. Preserve static keys, custom header precedence, error/abort propagation, request builders and response parsers. HTTP and access-token requests rotate credentials; WebSocket setup continues using the freshly minted access token rather than exposing the private API key. Reviewed upstream: @ai-sdk/cartesia 3.0.63 to 3.0.67. Validation passed: node Scripts/test-packages.mjs (all 52 owning package suites and the compatibility facade); node Scripts/sdk.mjs generate --check; node --test Scripts/tests/*.test.cjs (27 passed); docs-site check and build (100 pages). Live provider calls were not run.",
+      "compatibility": "Minor release for additive native API; existing static settings and call sites remain compatible. Updated direct dependency minimums are recorded in the manifest. Existing documented JS/framework and native product gaps remain; version-delta review does not imply full parity or live-service testing. Explicit custom authentication skips an unused credential supplier, a deliberate native callback-order adaptation."
     }
   ],
   "canonicalDirectory": "Packages/swift-ai-cartesia",
   "upstream": [
     {
       "name": "@ai-sdk/cartesia",
-      "reviewedVersion": "3.0.63",
+      "reviewedVersion": "3.0.67",
       "ledgerKind": "provider",
-      "evidence": "`AIProviders.cartesia`, `CartesiaProvider`, `CartesiaSpeechModel`, `CartesiaTranscriptionModel`, `CartesiaStreamingTranscriptionModel`, `Cartesia*Tests.swift`",
+      "evidence": "`AIProviders.cartesia`, `CartesiaProvider`, `CartesiaSpeechModel`, `CartesiaTranscriptionModel`, `CartesiaStreamingTranscriptionModel`, `Cartesia*Tests.swift`; 2026-11-01 delta: Docs/WeeklyUpstreamAudit20261101.json",
       "reviewStatus": "imported-reviewed-with-gaps",
-      "archiveIntegrity": "sha512-o4J1evblqGwlstR1F5CuvcMUtSHFSvF8POOWc26+mWf8cj1jF387tk1AFOZfy/0CYfd8al6y6ljDidZwmWuD+w==",
-      "sourceRef": "npm:@ai-sdk/cartesia@3.0.63",
-      "testRef": "682e2dd71456f14f9da33a1b983d1998c3a1184c",
-      "testRefRelationship": "inventory-snapshot-not-release-verified",
-      "contractFamilies": [],
-      "contractReview": "not-imported; inspect upstream declarations before extraction"
+      "archiveIntegrity": "sha512-vVcpnptIfoTQCbpG8QLwf6d558y3nbSnrlTjtco3VOR5RLuqs6qfl6IuUNrMmNA22HAt9imlKhHYegNETnp5aA==",
+      "sourceRef": "npm:@ai-sdk/cartesia@3.0.67",
+      "testRef": "9b603d36186b75e58d5479445a96c76f6e2d2700",
+      "testRefRelationship": "matching-release",
+      "contractFamilies": [
+        "ProviderV4",
+        "SpeechModelV4",
+        "TranscriptionModelV4"
+      ],
+      "contractReview": "2026-11-01: published declarations, source and exact matching-release changed tests reviewed; scoped dispositions and Swift translations are in Docs/WeeklyUpstreamAudit20261101.json. Existing broader product gaps remain; reviewed delta is not full-package parity."
     }
   ],
   "note": "Independent port. Imported test refs and contract review gaps retain their original status; export is not new upstream parity proof.",
@@ -54,7 +58,7 @@
     },
     {
       "canonicalPath": "Packages/swift-ai-cartesia/Porting/map.json",
-      "sha256": "8d5d413732dec52d4af89d51c3fac5673ae2c2f12b34ae13a426809ca78fd476"
+      "sha256": "51249d6ccf6fbeca851c7bc12da967a25e5932aa0c8f2abde8a040687c44ce6b"
     },
     {
       "canonicalPath": "Packages/swift-ai-cartesia/README.md",
@@ -66,7 +70,7 @@
     },
     {
       "canonicalPath": "Packages/swift-ai-cartesia/Sources/SwiftAICartesia/CartesiaProvider.swift",
-      "sha256": "8ea848044316f437932c1ca47e9a9867ac429a2b788e686002fc9909328ad741"
+      "sha256": "0cd949c12c03445e82eaa75df1a816433e4a3b7dc34b083723d055a53dc1d104"
     },
     {
       "canonicalPath": "Packages/swift-ai-cartesia/Sources/SwiftAICartesia/CartesiaSpeechModel.swift",
@@ -86,15 +90,15 @@
     },
     {
       "canonicalPath": "Packages/swift-ai-cartesia/Tests/SwiftAICartesiaTests/CartesiaSpeechModelTests.swift",
-      "sha256": "0a5e8a0c29adb3ee760f0eee75839350d6a3b7938a4e68d1dae57cf44d630806"
+      "sha256": "88885db6df12dc79259e40bfbc48c0d70563a248a5cfb25f46cc8813f3171c55"
     },
     {
       "canonicalPath": "Packages/swift-ai-cartesia/Tests/SwiftAICartesiaTests/CartesiaStreamingTranscriptionModelTests.swift",
-      "sha256": "d1c2266069ce17aec5a5c505aba1704b37f8d3864318e801e37f4c754cfe3955"
+      "sha256": "5a43b0c5cc060f805cb346c3c5664157462a01810e0157633b9ff1fb75b07ece"
     },
     {
       "canonicalPath": "Packages/swift-ai-cartesia/Tests/SwiftAICartesiaTests/CartesiaTranscriptionModelTests.swift",
-      "sha256": "128f9aabee6a7f58d0ba6d8c2baf5e09b621a8f7d9cbcc375800faf3b5c347b8"
+      "sha256": "d691086323afca2ad5b5e2c2c9f7e8afe2f233a192d1c25da21362e694287814"
     },
     {
       "canonicalPath": "Packages/swift-ai-cartesia/Tests/SwiftAICartesiaTests/FixtureDownloadTransport.swift",
@@ -103,6 +107,10 @@
     {
       "canonicalPath": "Packages/swift-ai-cartesia/Tests/SwiftAICartesiaTests/TestSupport.swift",
       "sha256": "ba6dc805ace75a600dcb1d30e2bd9c2ff76692940acab8c9363ed1795f49801b"
+    },
+    {
+      "canonicalPath": "Packages/swift-ai-cartesia/Tests/SwiftAICartesiaTests/Weekly20261101CredentialsTests.swift",
+      "sha256": "013a07ececc81b1e9e9f170a6e423c7e01cf526f0873d673eab8b917889b505d"
     }
   ]
 }
