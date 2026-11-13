@@ -3,13 +3,13 @@
   "packages": [
     {
       "name": "@ai-sdk/cartesia",
-      "reviewedVersion": "3.0.71",
+      "reviewedVersion": "3.0.76",
       "ledgerKind": "provider",
-      "evidence": "`AIProviders.cartesia`, `CartesiaProvider`, `CartesiaSpeechModel`, `CartesiaTranscriptionModel`, `CartesiaStreamingTranscriptionModel`, `Cartesia*Tests.swift`; 2026-11-01 delta: Docs/WeeklyUpstreamAudit20261101.json; 2026-11-08 delta: Docs/WeeklyUpstreamAudit20261108.json",
+      "evidence": "`AIProviders.cartesia`, `CartesiaProvider`, `CartesiaSpeechModel`, `CartesiaTranscriptionModel`, `CartesiaStreamingTranscriptionModel`, `Cartesia*Tests.swift`; 2026-11-01 delta: Docs/WeeklyUpstreamAudit20261101.json; 2026-11-08 delta: Docs/WeeklyUpstreamAudit20261108.json; 2026-11-14 delta: Docs/WeeklyUpstreamAudit20261114.json",
       "reviewStatus": "imported-reviewed-with-gaps",
-      "archiveIntegrity": "sha512-YWs9rV4e/2dYIInON31FRsRM46lg7Vx7huFnj7An3Mqzhd5VbG/W4HvPgij3INvs5QOEVmr0BDzYFIHxeRlO6g==",
-      "sourceRef": "npm:@ai-sdk/cartesia@3.0.71",
-      "testRef": "0f3a85f92d1ce06ccde01d662407ef83e097a712",
+      "archiveIntegrity": "sha512-zJCzWKVpjGxcfrfqoH3gwe7nV8BgtKv4Sk9agBZ5qIgGtEILL1Xo26I+oUyask+6Tp9o5ZiAAp8EDJzQ6Tx3Eg==",
+      "sourceRef": "npm:@ai-sdk/cartesia@3.0.76",
+      "testRef": "8bc7652cdb13fc84722666eb93f45acd0d131eee",
       "testRefRelationship": "matching-release",
       "contractFamilies": [
         "ProviderV4",
@@ -17,7 +17,7 @@
         "SpeechModelV4",
         "TranscriptionModelV4"
       ],
-      "contractReview": "2026-11-08: published declarations/source and exact matching-release changed tests reviewed; native implementations, per-file dispositions and broader retained gaps are recorded in Docs/WeeklyUpstreamAudit20261108.json. Reviewed delta is not full-package or live-service parity."
+      "contractReview": "2026-11-14: verified published source/declarations and exact matching-release changed tests reviewed separately; native ports, per-file dispositions and retained gaps are recorded in Docs/WeeklyUpstreamAudit20261114.json. Delta review is not full-package or live-service parity."
     }
   ]
 }
