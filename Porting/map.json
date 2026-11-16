@@ -21,6 +21,7 @@
     "sources": [
       "Sources/SwiftAICartesia/CartesiaHTTPConfiguration.swift",
       "Sources/SwiftAICartesia/CartesiaProvider.swift",
+      "Sources/SwiftAICartesia/CartesiaRealtimeModel.swift",
       "Sources/SwiftAICartesia/CartesiaSpeechModel.swift",
       "Sources/SwiftAICartesia/CartesiaStreamingTranscriptionModel.swift",
       "Sources/SwiftAICartesia/CartesiaTranscriptionModel.swift"
@@ -30,6 +31,7 @@
       "Tests/SwiftAICartesiaTests/CartesiaSpeechModelTests.swift",
       "Tests/SwiftAICartesiaTests/CartesiaStreamingTranscriptionModelTests.swift",
       "Tests/SwiftAICartesiaTests/CartesiaTranscriptionModelTests.swift",
+      "Tests/SwiftAICartesiaTests/CartesiaUpstreamParityTests.swift",
       "Tests/SwiftAICartesiaTests/FixtureDownloadTransport.swift",
       "Tests/SwiftAICartesiaTests/TestSupport.swift",
       "Tests/SwiftAICartesiaTests/Weekly20261101CredentialsTests.swift",
