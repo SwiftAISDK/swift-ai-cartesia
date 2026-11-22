@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.3.0
+## 1.3.1
 
-- Adds the realtime model; option order and format parsing match upstream.
-  Compatibility: Source-compatible; changes are additive. Request bodies, results, warnings and errors change to match the reviewed upstream package.
+- Align the provider request identity with @ai-sdk/cartesia 3.0.78 after comparing source, declarations and matching-release tests against 3.0.76. Offline validation passed: node Scripts/test-packages.mjs (56 packages, 3672 owning tests and 1760 compatibility tests), generation, tooling, isolation, and version selection. See Docs/Archive/WeeklyUpstreamAudit20261122.md for retained gaps. Paid provider calls were skipped.
+  Compatibility: Source-compatible request-header update.
